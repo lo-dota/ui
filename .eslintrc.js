@@ -4,4 +4,12 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  rules: {
+    'import/no-extraneous-dependencies': [
+      0,
+      {
+        devDependencies: ['.storybook/**', 'stories/**'],
+      },
+    ],
+  },
 };
